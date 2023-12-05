@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name',50);
             $table->double('price');
             $table->string('description',100);
+            $table->integer('quantity')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
